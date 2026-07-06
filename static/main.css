@@ -1,1 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+nav{
+    background:#1e293b;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav li{
+    padding:18px 35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+.hero{
+    text-align:center;
+    margin-top:40px;
+}
+
+.hero h2{
+    font-size:35px;
+}
+
+.hero p{
+    margin-top:10px;
+    color:#666;
+}
+
+.upload-box{
+
+    width:500px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 20px rgba(0,0,0,.1);
+
+    text-align:center;
+
+}
+
+input[type=file]{
+
+    width:100%;
+
+    padding:12px;
+
+    border:2px dashed #2563eb;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.predict-btn{
+
+    margin-top:20px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 45px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.predict-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+.result{
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+.preview{
+
+    width:350px;
+
+    margin-top:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+
+}
+
+.prediction{
+
+    width:500px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 0 15px rgba(0,0,0,.1);
+
+}
+
+.prediction h1{
+
+    margin-top:15px;
+
+    color:#2563eb;
+
+    font-size:40px;
+
+}
+
+.probability{
+
+    width:600px;
+
+    margin:40px auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+}
+
+th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+td{
+
+    text-align:center;
+
+    padding:15px;
+
+}
+
+tr:nth-child(even){
+
+    background:#f2f2f2;
+
+}
+
+footer{
+
+    background:#1e293b;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+}
+.preview{
+    width:300px;
+    height:300px;
+    object-fit:contain;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+    margin-top:20px;
+}
