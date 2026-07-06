@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <h2>Upload an Artwork</h2>
+
+    <p>
+        Upload an artwork image and let our model identify its artistic style.
+    </p>
+
+</section>
+
+
+<section class="upload-box">
+
+<form action="/upload"
+      method="post"
+      enctype="multipart/form-data">
+
+    <input
+        type="file"
+        name="image"
+        accept="image/*"
+        required>
+
+    <br><br>
+
+    <button class="predict-btn" type="submit">
+
+        Predict Art Style
+
+    </button>
+
+</form>
+
+</section>
+
+
+{% if image_url %}
+
+<section class="result">
+
+    <h2>Uploaded Image</h2>
+
+    <img src="{{ image_url }}" width="300" >
+
+</section>
+
+{% endif %}
+
+
+{% if prediction %}
+
+<section class="prediction">
+
+    <h2>Prediction Result</h2>
+
+    <h1>{{ prediction }}</h1>
+
+</section>
+
+{% endif %}
+
+
+{% if probabilities %}
+
+<section class="probability">
+
+    <h2>Confidence Scores</h2>
+
+    <table>
+
+        <tr>
+
+            <th>Art Style</th>
+
+            <th>Probability</th>
+
+        </tr>
+
+        {% for class_name, probability in probabilities %}
+
+        <tr>
+
+            <td>{{ class_name }}</td>
+
+            <td>{{ "%.2f"|format(probability*100) }}%</td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</section>
+
+{% endif %}
+{% endblock %}
+
+

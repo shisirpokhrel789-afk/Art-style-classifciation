@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}
+Minimalism
+{% endblock %}
+
+{% block content %}
+
+<h1>Romanticism</h1>
+
+<p>
+Romanticism was an art movement of the late eighteenth and early nineteenth
+centuries that emphasized emotion, imagination, nature, and individual freedom.
+Romantic artists often created dramatic landscapes, historical events, and scenes
+that inspired awe, mystery, and powerful emotions.
+</p>
+
+<h2>Characteristics</h2>
+
+<ul>
+    <li>Emphasis on emotion</li>
+    <li>Dramatic landscapes</li>
+    <li>Nature as inspiration</li>
+    <li>Historical and heroic subjects</li>
+    <li>Dynamic lighting</li>
+</ul>
+
+<h2>Famous Examples</h2>
+
+<ul>
+    <li>Wanderer Above the Sea of Fog – Caspar David Friedrich</li>
+    <li>Liberty Leading the People – Eugène Delacroix</li>
+    <li>The Raft of the Medusa – Théodore Géricault</li>
+    <li>The Hay Wain – John Constable</li>
+    <li>The Fighting Temeraire – J. M. W. Turner</li>
+</ul>
+
+<h2>Famous Examples</h2>
+
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="{{ url_for('test', path='Romanticism/1.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test',path='Romanticism/2.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test', path='Romanticism/3.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test', path='Romanticism/4.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test', path='Romanticism/5.jpg') }}" width="400">
+        
+    </div>
+
+</div>
+
+{% endblock %}
+

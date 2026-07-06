@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}
+Minimalism
+{% endblock %}
+
+{% block content %}
+
+<h1>Symbolism</h1>
+
+<p>
+Symbolism is an artistic movement that emerged in the late nineteenth century.
+Rather than depicting reality directly, Symbolist artists used symbols,
+mythology, dreams, fantasy, and spiritual themes to express emotions and
+abstract ideas. Their works often have mysterious and imaginative meanings.
+</p>
+
+<h2>Characteristics</h2>
+
+<ul>
+    <li>Dream-like imagery</li>
+    <li>Mythological subjects</li>
+    <li>Hidden meanings</li>
+    <li>Spiritual themes</li>
+    <li>Emotional expression</li>
+</ul>
+
+<h2>Famous Examples</h2>
+
+<ul>
+    <li>The Kiss – Gustav Klimt</li>
+    <li>The Scream – Edvard Munch</li>
+    <li>Isle of the Dead – Arnold Böcklin</li>
+    <li>The Cyclops – Odilon Redon</li>
+    <li>The Apparition – Gustave Moreau</li>
+</ul>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="{{ url_for('test', path='symbolism/1.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test',path='symbolism/2.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test', path='symbolism/3.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test', path='symbolism/4.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test', path='symbolism/5.jpg') }}" width="400">
+        
+    </div>
+
+</div>
+
+{% endblock %}
+

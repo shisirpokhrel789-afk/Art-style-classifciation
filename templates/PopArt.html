@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}
+Pop Art
+{% endblock %}
+
+{% block content %}
+
+<h1>Pop Art</h1>
+
+<p>
+Pop Art is an artistic movement that emerged during the 1950s and 1960s.
+It draws inspiration from popular culture including advertisements,
+comic books, celebrities, newspapers, and everyday consumer products.
+Pop Art is known for its bold colors, striking graphics, and playful imagery.
+</p>
+
+<h2>Characteristics</h2>
+
+<ul>
+    <li>Bright and vibrant colors</li>
+    <li>Comic-book style illustrations</li>
+    <li>Celebrity portraits</li>
+    <li>Consumer culture themes</li>
+    <li>Bold outlines</li>
+</ul>
+
+<h2>Famous Examples</h2>
+
+<ul>
+    <li>Campbell's Soup Cans – Andy Warhol</li>
+    <li>Marilyn Diptych – Andy Warhol</li>
+    <li>Whaam! – Roy Lichtenstein</li>
+    <li>Drowning Girl – Roy Lichtenstein</li>
+    <li>Just what is it that makes today's homes so different, so appealing? – Richard Hamilton</li>
+</ul>
+<div class="gallery">
+
+    <div class="card">
+        <img src="{{ url_for('test', path='Pop_Art/1.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test',path='Pop_Art/2.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test', path='Pop_Art/3.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test', path='Pop_Art/4.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('test', path='Pop_Art/5.jpg') }}" width="400">
+        
+    </div>
+
+</div>
+
+{% endblock %}

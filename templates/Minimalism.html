@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}
+Minimalism
+{% endblock %}
+
+{% block content %}
+
+<h1>Minimalism</h1>
+
+<p>
+Minimalism is an art movement that emerged during the 1960s in the United States.
+It focuses on simplicity by removing unnecessary details and emphasizing basic
+geometric forms, clean lines, limited colors, and open space. Minimalist artists
+believe that "less is more" and encourage viewers to appreciate the artwork through
+its essential elements rather than decoration.
+</p>
+
+<h2>Characteristics</h2>
+
+<ul>
+    <li>Simple geometric shapes</li>
+    <li>Limited color palette</li>
+    <li>Minimal details</li>
+    <li>Balance and symmetry</li>
+    <li>Focus on space and form</li>
+</ul>
+
+<h2>Famous Examples</h2>
+
+<ul>
+    <li>Die Fahne Hoch! – Frank Stella</li>
+    <li>Untitled – Agnes Martin</li>
+    <li>Red Blue Green – Ellsworth Kelly</li>
+    <li>Bridge – Robert Ryman</li>
+    <li>Untitled Sculptures – Donald Judd</li>
+</ul>
+
+
+<h3> Image Examples </h3>
+<div class="gallery">
+
+    <div class="card"  style="padding-left: 10px;padding-bottom: 10px;">
+        <img src="{{ url_for('test', path='Minimalism/1.jpg') }}" width="400">
+        
+    </div>
+    <div style="padding-left:10px;">
+
+    </div>
+    <div class="card" style="padding-left: 10px;padding-bottom: 10px;">
+        <img src="{{ url_for('test',path='Minimalism/2.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card"  style="padding-left: 10px; padding-bottom: 10px;">
+        <img src="{{ url_for('test', path='Minimalism/3.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card"  style="padding-left: 10px; padding-bottom: 10px;">
+        <img src="{{ url_for('test', path='Minimalism/4.jpg') }}" width="400">
+        
+    </div>
+
+    <div class="card"  style="padding-left: 10px; padding-bottom: 10px;">
+        <img src="{{ url_for('test', path='Minimalism/5.jpg') }}" width="400">
+        
+    </div>
+
+</div>
+
+{% endblock %}
