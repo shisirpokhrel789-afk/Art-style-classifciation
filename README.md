@@ -132,17 +132,6 @@ Art-Style-Classification/
 
 ## 🚀 Installation
 
-Clone the repository
-
-```bash
-git clone https://github.com/yourusername/Art-Style-Classification.git
-```
-
-Move into the project directory
-
-```bash
-cd Art-Style-Classification
-```
 
 Install dependencies
 
