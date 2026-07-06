@@ -206,4 +206,4 @@ https://github.com/shisirpokhrel789-afk
 ## ⭐ If you found this project useful, consider giving it a star.
 
 ## Dataset Link:
-- ://www.kaggle.com/datasets/steubk/wikiart
+- https://www.kaggle.com/datasets/steubk/wikiart
